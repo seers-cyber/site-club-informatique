@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Informatique - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- En-tête / Navigation (avec menu burger intégré) -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="logo">Club<span>Info</span></a>
+
+      <!-- Checkbox masqué + bouton burger pour mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger-icon" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#contact" class="btn btn-nav">Rejoindre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Hero -->
+  <section id="accueil" class="hero">
+    <div class="container hero-content">
+      <h1>Bienvenue au Club Informatique</h1>
+      <p>Un espace d'échange, d'entraide et de passion pour le numérique ouvert à tous.</p>
+      <a href="#activites" class="btn btn-primary">Découvrir nos ateliers</a>
+    </div>
+  </section>
+
+  <main class="container">
+    
+    <!-- Section Activités / Grille de cartes -->
+    <section id="activites" class="section">
+      <h2 class="section-title">Nos Activités</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ateliers Pratiques</h3>
+          <p>Initiez-vous à la programmation, à la sécurité informatique et à la gestion des systèmes.</p>
+        </article>
+        <article class="card">
+          <h3>Entraide & Dépannage</h3>
+          <p>Besoin d'aide avec un logiciel ou votre matériel ? Venez en discuter lors de nos séances libres.</p>
+        </article>
+        <article class="card">
+          <h3>Conférences & Débats</h3>
+          <p>Présentations régulières sur l'Open Source, la protection des données et les technologies émergentes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="section">
+      <h2 class="section-title">À propos du Club</h2>
+      <div class="about-content">
+        <p>Notre association rassemble des passionnés de tous niveaux pour promouvoir la culture numérique, le partage de connaissances et le logiciel libre dans une ambiance conviviale.</p>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Nous Contacter</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Informations</h3>
+          <p><strong>Rencontres :</strong> Tous les mardis de 18h à 20h</p>
+          <p><strong>Adresse :</strong> 123, rue de l'Inspiration</p>
+          <p><strong>Courriel :</strong> <a href="mailto:contact@clubinfo.org">contact@clubinfo.org</a></p>
+        </div>
+        
+        <!-- Formulaire statique (sans JavaScript) -->
+        <form class="contact-form" action="https://formspree.io/f/votre-id" method="POST">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Courriel</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Club Informatique. Tous droits réservés.</p>
+      <p>Conçu en HTML & CSS pur.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
